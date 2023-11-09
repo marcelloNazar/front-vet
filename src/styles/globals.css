@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+}
+
+@layer components {
+  .data-container {
+    @apply flex justify-between border-l-2 border-gray-900 dark:border-gray-100 uppercase px-4 w-full;
+  }
+  .vet-container {
+    @apply flex flex-col justify-center items-center h-full w-full dark:bg-gray-900 dark:text-white bg-gray-100 rounded transition duration-100 overflow-hidden;
+  }
+  .vet-botao {
+    @apply bg-orange-600 text-white rounded px-2 py-1  text-base transform transition duration-200 hover:opacity-90 hover:shadow-lg;
+  }
+  .hist-botao {
+    @apply bg-gray-100 border-l-8 w-full h-full my-1 hover:shadow-md text-xl dark:bg-gray-900 dark:text-white transform transition hover:scale-105 duration-100;
+  }
+  .vet-input {
+    @apply mr-1 mb-1 px-4 py-1 border w-full rounded bg-white text-black outline-none focus:border-2 focus:border-gray-900;
+  }
+  .item-list {
+    @apply flex justify-between bg-white border border-gray-500 cursor-pointer px-2 mb-0.5 w-full;
+  }
+  .modal-container {
+    @apply flex flex-col justify-start items-center h-full w-full text-black bg-white overflow-hidden;
+  }
+  .header-container {
+    @apply flex justify-between items-center w-full mb-1;
+  }
+  .body-container {
+    @apply w-full h-full p-2 pl-6;
+  }
+  .body-modal {
+    @apply w-full grid grid-cols-3 overflow-hidden;
+  }
+  .data-modal-container {
+    @apply flex w-full justify-between;
+  }
+  .data-modal {
+    @apply flex w-full px-2 border justify-between;
+  }
+}
